@@ -780,7 +780,7 @@
           </div>
         </div>
 
-        <form name="my-portfolio-contact-form">
+        <form name="personal-portfolio-contact-form">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold text-primary"
@@ -821,6 +821,13 @@
                 class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
               >
                 Kirim
+              </button>
+
+              <button type="button" class="bg-indigo-500" disabled>
+                <svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+                  <!-- ... -->
+                </svg>
+                Loading...
               </button>
             </div>
           </div>
@@ -1073,8 +1080,8 @@
 
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycby8cwgNa1_z3OdK-Q7m6A0N8S-kdEq9OsV4aR4Tk3hNf_Y2hXVdOiv9HDh0Yn8G6ZM8dw/exec";
-      const form = document.forms["my-portfolio-contact-form"];
+        "https://script.google.com/macros/s/AKfycbw4K2dDqNfjjJOlf2iFjTzqfF--x3xnQOy1VAfYl9HQVfX5EMSN5Ks-eEO_Lq3uTZuS7Q/exec";
+      const form = document.forms["personal-portfolio-contact-form"];
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
